@@ -7,16 +7,81 @@
 //Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf ("Desafio: Super Trunfo\n\n");
+    // declaração de variáveis:
+    char estado;
+    char cod_cartas[50];
+    char nome_cidade[50];
+    int populacao,num_pontos;
+    float area, pib;
+
+    //scanf - cadastro de cartas
+
+
+//CARTA 1:
+    printf ("Carta 1\n\n");
+    printf("Digite o estado:\n");
+    scanf (" %c", &estado);
+ 
+
+    printf ("Digite o Código da carta:\n");
+    scanf ("%s", &cod_cartas);
+
+    printf ("Digite o nome da cidade:\n");
+    scanf ("%s", nome_cidade);
+
+    printf ("Digite o número de habitantes:\n");
+    scanf ("%d", &populacao);
+
+    printf ("Digite a àrea(km²) da cidade:\n");
+    scanf ("%f", &area);
+
+    printf ("Digite o PIB da cidade:\n");
+    scanf ("%f", &pib);
+
+    printf ("Digite o número de pontos turísticos da cidade:\n");
+    scanf ("%d", &num_pontos);
+
+// impressão dos dados cadastrados
+
+    printf ("\nDADOS DA CARTA 1:\n\n");
+    printf("Estado: %c\nCódigo: %s\n", estado, cod_cartas);
+    printf ("Nome da cidade:%s\nPopulação: %d\n", nome_cidade, populacao);
+    printf ("Àrea: %.5f km²\nPIB: R$%f\nNúmero de pontos turísticos:%d\n", area,pib,num_pontos);
+    printf ("\n>>>>>>>>>>>CARTA 1 CADASTRADA COM SUCESSO<<<<<<<<<<<<<<<<<\n\n");
+
+//CARTA 2
+
+    printf ("Carta 2\n\n");
+    printf("Digite o estado:\n");
+    scanf (" %c", &estado);
+ 
+
+    printf ("Digite o Código da carta:\n");
+    scanf ("%s", &cod_cartas);
+
+    printf ("Digite o nome da cidade:\n");
+    scanf ("%s", nome_cidade);
+
+    printf ("Digite o número de habitantes:\n");
+    scanf ("%d", &populacao);
+
+    printf ("Digite a àrea(km²) da cidade:\n");
+    scanf ("%f", &area);
+
+    printf ("Digite o PIB da cidade:\n");
+    scanf ("%f", &pib);
+
+    printf ("Digite o número de pontos turísticos da cidade:\n");
+    scanf ("%d", &num_pontos);
+
+// impressão dos dados cadastrados
+
+    printf ("\nDADOS DA CARTA 2:\n\n");
+    printf("Estado: %c\nCódigo: %s\n", estado, cod_cartas);
+    printf ("Nome da cidade:%s\nPopulação: %d\n", nome_cidade, populacao);
+    printf ("Àrea: %.5f km²\nPIB: R$%f\nNúmero de pontos turísticos:%d\n", area,pib,num_pontos);
+    printf ("\n>>>>>>>>>>>CARTA 2 CADASTRADA COM SUCESSO<<<<<<<<<<<<<<<<<\n\n");
 
     return 0;
 }
