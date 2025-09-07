@@ -12,8 +12,13 @@ int main() {
     char estado;
     char cod_cartas[50];
     char nome_cidade[50];
-    int populacao,num_pontos;
-    float area, pib;
+    int populacao = 1,num_pontos =1;
+    float area =1, pib =1, dens = 1, pibper =1;
+
+
+    // adicionei as variaveis, e fiz o casting
+
+
 
     //scanf - cadastro de cartas
 
@@ -23,7 +28,6 @@ int main() {
     printf("Digite o estado:\n");
     scanf (" %c", &estado);
  
-
     printf ("Digite o Código da carta:\n");
     scanf ("%s", &cod_cartas);
 
@@ -42,12 +46,16 @@ int main() {
     printf ("Digite o número de pontos turísticos da cidade:\n");
     scanf ("%d", &num_pontos);
 
+    dens = (float) populacao / area;
+    pibper = (pib * 1000000000) / populacao;
+
 // impressão dos dados cadastrados
 
     printf ("\nDADOS DA CARTA 1:\n\n");
     printf("Estado: %c\nCódigo: %s\n", estado, cod_cartas);
     printf ("Nome da cidade:%s\nPopulação: %d\n", nome_cidade, populacao);
-    printf ("Àrea: %.5f km²\nPIB: R$%f\nNúmero de pontos turísticos:%d\n", area,pib,num_pontos);
+    printf ("Àrea: %.2f km²\nPIB: R$%.2f\nNúmero de pontos turísticos:%d\n", area,pib,num_pontos);
+    printf ("Densidade Populacional: %.2f hab/km²\n PIB per Capita: %.2f reais\n", dens,pibper);
     printf ("\n>>>>>>>>>>>CARTA 1 CADASTRADA COM SUCESSO<<<<<<<<<<<<<<<<<\n\n");
 
 //CARTA 2
@@ -75,13 +83,20 @@ int main() {
     printf ("Digite o número de pontos turísticos da cidade:\n");
     scanf ("%d", &num_pontos);
 
+    dens = (float) populacao / area;
+    pibper = (pib * 1000000000) / populacao;
+
 // impressão dos dados cadastrados
 
     printf ("\nDADOS DA CARTA 2:\n\n");
     printf("Estado: %c\nCódigo: %s\n", estado, cod_cartas);
     printf ("Nome da cidade:%s\nPopulação: %d\n", nome_cidade, populacao);
-    printf ("Àrea: %.5f km²\nPIB: R$%f\nNúmero de pontos turísticos:%d\n", area,pib,num_pontos);
+    printf ("Àrea: %.2f km²\nPIB: R$%.2f\nNúmero de pontos turísticos:%d\n", area,pib,num_pontos);
+    printf ("Densidade Populacional: %.2f hab/km²\n PIB per Capita: %.2f reais\n", dens,pibper);
     printf ("\n>>>>>>>>>>>CARTA 2 CADASTRADA COM SUCESSO<<<<<<<<<<<<<<<<<\n\n");
+
+
+    //adicionar densidade populacional e pib per capita
 
     return 0;
 }
