@@ -50,7 +50,7 @@ int main() {
     dens = (float) populacao / area;
     pibper = (pib * 1000000000) / populacao;
 
-    float superPoder = populacao+area+pib+num_pontos-dens+pibper;
+    float superPoder = populacao+area+pib+num_pontos+(1/dens)+pibper;
    
 
 
@@ -92,7 +92,7 @@ int main() {
     dens = (float) populacao2 / area2;
     pibper = (pib2 * 1000000000) / populacao2;
 
-    float superPoder2 = populacao+area+pib+num_pontos-dens+pibper;
+    float superPoder2 = populacao+area+pib+num_pontos+(1/dens)+pibper;
 
 // impressão dos dados cadastrados
 
